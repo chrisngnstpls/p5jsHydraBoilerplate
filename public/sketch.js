@@ -10,9 +10,8 @@ export const myp5 = new p5((sketch) => {
     }
 
     sketch.setup = () => {
-        xCanv = sketch.createCanvas(window.innerWidth, window.innerHeight)
-        // img.resize(150, 100)
 
+        img.resize(60,60)
         sketch.noSmooth();
         //xCanv.hide()
 
@@ -21,6 +20,7 @@ export const myp5 = new p5((sketch) => {
     sketch.draw = () => {
 
         sketch.image(img, 0,0,img.width, img.height)
+        
     }
 
 })
